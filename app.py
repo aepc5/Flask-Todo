@@ -21,7 +21,7 @@ class Todo(db.Model):
 @app.route('/')
 def home():
     todo_list = Todo.query.all() # List of all the items in the database (Concept: Working with Databases Directly with Python)
-    return render_template('base.html', todo_list=todo_list) # Renders the html based on the template and passes the todo_list variable to it
+    return render_template('base.html', todo_list=todo_list) # Renders the html based on the template and passes the todo_list variable to it (Concept: Templates)
 
 # Concept: Routing & Request Object
 # Is called by the add form
